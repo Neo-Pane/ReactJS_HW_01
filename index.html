@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>First Assignment</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      var container1 = {
+        margin: "10px",
+        padding: "10px",
+        display: "flex",
+        flexDirection: "column",
+
+        fontSize: "20px",
+      };
+      function Div1() {
+        return (
+          <div>
+            <h2>Topics covered </h2>
+          </div>
+        );
+      }
+
+      function Div2() {
+        return (
+          <div>
+            <p>
+              The following is a list of all the topics that we cover in MDN learning area.
+            </p>
+          </div>
+        );
+      }
+
+      function Div3() {
+        return (
+          <div>
+            <p><a href="#"> Getting started with the web </a></p>
+            <p>
+              Provides a practical introduction to web developement for complete beginners.
+            </p>
+          </div>
+        );
+      }
+      function Div4() {
+        return (
+          <div>
+            <p><a href="#"> HTML- Structuring the web </a></p>
+            <p>
+              HTML is the languge that we use to structure the different parts of our content and defin what their meaning or purpose is. This topic teaches HTML in detail. 
+            </p>
+          </div>
+        );
+      }
+      function Div5() {
+        return (
+          <div>
+            <p><a href="#"> CSS- Styling the web </a></p>
+            <p>
+              CSS is the languge that we use to control our web content's layout  and style, as well as adding behaviour like animation. This topic provides comprehensive coverage of CSS.
+            </p>
+          </div>
+        );
+      }
+
+      function Component() {
+        return (
+          <div style={container1}>
+            <Div1 />
+            <Div2 />
+            <Div3 />
+            <Div4 />
+            <Div5/>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Component />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
